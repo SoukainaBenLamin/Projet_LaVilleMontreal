@@ -99,8 +99,8 @@ LE COMPTE TWITTER :
 ```
 ##### Le lien vers la page profil de compte Twitter : https://twitter.com/INF5190_H22
 ##### Crédentiels du Compte Twitter : 
-    - Courriel : inf5190.H22@gmail.com
-    - Mot de passe : INF5190*.
+    - Courriel : ******@gmail.com
+    - Mot de passe : ******.
 
 - #### C1 :
 ```
