@@ -1,6 +1,6 @@
 ## Cours INF5190 - Hiver 2022
 ### Nom et prénom : BEN LAMIN SOUKAINA
-### Code permanent : BENS10549601
+### Code permanent : 
 ### Les fonctionnalités développées :
 - #### A1 :
 ```
