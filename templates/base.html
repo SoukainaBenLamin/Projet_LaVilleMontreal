@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Gestion des données de la ville de Montréal</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link type="text/css" rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link type="text/css" rel="shortcut icon" href="{{ url_for('static', filename='images/logo.ico') }}" sizes="256x256">
+    <link type="text/css" rel="stylesheet"  href="/static/CSS/style.css"/>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+</head>
+    <body>
+        <header class="site-header">
+            <nav class="navbar navbar-expand-md navbar-light fixed-top" id="navbar">
+                <div class="container">
+                    <a class="navbar-brand mr-4" href="/" title="Content Management System"><img src="/static/images/MontrealLogo.png" width="200" height="40" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarToggle">
+                          <div class="navbar-nav mr-auto">
+                              <a class="nav-item nav-link" href="/">Accueil</a>
+                              <a class="nav-item nav-link" href="{{ url_for('documentation')}}">Documentation</a>
+                          </div>
+                          <div class="navbar-nav">
+                              <a class="nav-item nav-link" href="/api/all_installations">Les installations en JSON</a>
+                              <a class="nav-item nav-link" href="/api/all_installations_xml">Les installations en XML</a>
+                              <a class="nav-item nav-link" href="/api/all_installations_csv">Les installations en CSV</a>
+                          </div>
+                    </div>
+
+
+
+                </div>
+            </nav>
+        </header>
+        <main class="container">
+            {% if titre %}
+                <h1>{{ titre }}</h1><hr>
+            {% endif %}
+            <div class="row">
+                <div class="col-md-12">
+                  {% with messages = get_flashed_messages(with_categories=true) %}
+                    {% if messages %}
+                      {% for category, message in messages %}
+                        <div class="alert alert-{{ category }}">
+                          {{ message }}
+                        </div>
+                      {% endfor %}
+                    {% endif %}
+                  {% endwith %}
+                  {% block content %}{% endblock %}
+                </div>
+            </div>
+        </main>
+        <footer id="footer">
+            <div class="flex-container">
+                <div class="infos">
+                    <p>À propos :<br></p>
+                    <hr style="background-color: white;">
+                    Cette application à été developpée <br> dans le cadre <br> du cours
+                    <a href="https://etudier.uqam.ca/cours?sigle=INF5190"> INF5190 </a>
+                    de l’<a href="https://uqam.ca/">UQAM</a>
+                </div>
+                <div class="infos">
+                    <p>Développeur:<br></p>
+                    <hr style="background-color: white;">
+                    Nom: BEN LAMIN <br> Prenom:
+                    <a href="mailto:bj291929@ens.uqam.ca">SOUKAINA</a><br>
+                    Code permanent:BENS10549601
+                </div>
+            </div>
+        </footer>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="./../static/js/script.js"></script>
+        <script src="./../static/js/radioChange.js"></script>
+</body>
+</html>

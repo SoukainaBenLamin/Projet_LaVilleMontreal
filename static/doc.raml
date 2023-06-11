@@ -1,0 +1,158 @@
+#%RAML 1.0
+title: La liste des services API utilisés dans le pojet de session INF5190
+baseUri: http://127.0.0.1:5000/api
+types:
+  Glissade:
+    properties:
+      nom:
+        type: string
+        required: true
+      nom_arrondisse:
+        type: string
+        required: true
+      cle_arrondisse:
+        type: string
+        required: true
+      date:
+        type: string
+        required: true
+      Ouvert:
+        type: integer
+        required: true
+      Deblaye:
+        type: integer
+        required: true
+      Condition:
+        type: string
+        required: true
+  Piscine:
+    properties:
+      nom:
+        type: string
+        required: true
+      id:
+        type: integer
+        required: true
+      nom_arrondisse:
+        type: string
+        required: true
+      adresse:
+        type: string
+        required: true
+  Patinoire:
+    properties:
+      nom:
+        type: string
+        required: true
+      nom_arrondisse:
+        type: string
+        required: true
+      date:
+        type: string
+        required: true
+      Ouvert:
+        type: integer
+        required: true
+      Deblaye:
+        type: integer
+        required: true
+      arrose:
+        type: integer
+        required: true
+      resurface:
+        type: integer
+        required: true
+
+  InstallationList:
+    properties:
+      glissades:
+        type: Glissade
+        required: true
+      piscines:
+        type: Piscine
+        required: true
+      patinoires:
+        type: Patinoire
+        required: true
+/installations:
+  get:
+    description: Extraire la liste de toutes les installations existantes dans un arrondissment de la ville de Montréal.
+    queryParameters:
+      arrondissement:
+         description: Représente le nom d'un arrondissment de la ville de Montréal.
+         type: string
+         required: true
+         example: "LaSalle"
+      Comment utilisé les paramétres de l'URL ?:
+         description : Un exemple d'utilisation des QueryParameters avec l'Api.
+         example:  "/api/installations?arrondissement=LaSalle"
+
+    responses:
+      200:
+        body:
+          application/json:
+            type: InstallationList
+      404:
+        description: Erreur au niveau des paramétres de l'URL.
+  /{type}:
+    get:
+      description: Extraire toutes les installations de tous les arrondissments, spécifiés par leurs type.
+      exemple: /api/installations/piscines
+      responses:
+        200:
+          body:
+            application/json:
+              type: Object
+        404:
+          description: Le type spécifié n'existe pas.
+/piscine/{nom}:
+  get:
+    description: Extraire toutes les informations d'une piscine, spécifiée par son nom.
+    responses:
+      200:
+        body:
+          application/json:
+            type: Piscine
+      404:
+        description: Le nom spécifié n'existe pas.
+/glissade/{nom}:
+  get:
+    description: Extraire toutes les informations d'un glissade, spécifié par son nom.
+    responses:
+      200:
+        body:
+          application/json:
+            type: Glissade
+      404:
+        description: Le nom spécifié n'existe pas.
+/patinoire/{nom}:
+  get:
+    description: Extraire toutes les informations d'un patinoire, spécifié par son nom.
+    responses:
+      200:
+        body:
+          application/json:
+            type: Patinoire
+      404:
+        description: Le nom spécifié n'existe pas.
+/all_installations:
+  get:
+    description: Extraire toutes les installations ainsi que leurs informations de tous les arrondissements.
+    responses:
+      200:
+        body:
+          application/json:
+            type: InstallationList
+        description: reponse contenant la liste des installations en format JSON.
+/all_installations_xml:
+  get:
+    description: Extraire toutes les installations ainsi que leurs informations de tous les arrondissements, en format XML
+    responses:
+      200:
+        description: reponse contenant la liste des installations en format XML.
+/all_installations_csv:
+  get:
+    description: Extraire toutes les installations ainsi que leurs informations de tous les arrondissements, en format CSV
+    responses:
+      200:
+        description: reponse contenant la liste des installations en format CSV.

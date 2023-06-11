@@ -1,0 +1,4 @@
+# YAML file that contains emails adresses needed to send the new installations
+users :
+  - 'bj291929@ens.uqam.ca'
+  - 'benlaminsoukaina@gmail.com'

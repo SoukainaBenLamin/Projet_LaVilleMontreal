@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<glissades>
+    <glissade>
+        <nom>Aire de glissade, Ahuntsic</nom>
+        <arrondissement>
+            <nom_arr>Ahuntsic - Cartierville</nom_arr>
+            <cle>ahc</cle>
+            <date_maj>2022-03-06 12:13:43</date_maj>
+        </arrondissement>
+        <ouvert></ouvert>
+        <deblaye>0</deblaye>
+        <condition>Mauvaise</condition>
+    </glissade>
+    <glissade>
+        <nom>Aire de glissade, Des Hirondelles</nom>
+        <arrondissement>
+            <nom_arr>Ahuntsic - Cartierville</nom_arr>
+            <cle>ahc</cle>
+            <date_maj>2022-03-06 12:13:43</date_maj>
+        </arrondissement>
+        <ouvert></ouvert>
+        <deblaye>0</deblaye>
+        <condition>Mauvaise</condition>
+    </glissade>
+    <glissade>
+        <nom>Aire de glissade ,Don-Bosco</nom>
+        <arrondissement>
+            <nom_arr>Rivière-des-Prairies - Pointe-aux-Trembles</nom_arr>
+            <cle>rdp</cle>
+            <date_maj>2022-03-04 03:47:41</date_maj>
+        </arrondissement>
+        <ouvert></ouvert>
+        <deblaye></deblaye>
+        <condition>Mauvaise</condition>
+    </glissade>
+    <glissade>
+        <nom>Aire de glissade, Du Pélican</nom>
+        <arrondissement>
+            <nom_arr>Rosemont - La Petite-Patrie</nom_arr>
+            <cle>rpp</cle>
+            <date_maj>2022-03-18 18:39:14</date_maj>
+        </arrondissement>
+        <ouvert></ouvert>
+        <deblaye></deblaye>
+        <condition>Mauvaise</condition>
+    </glissade>
+    <glissade>
+        <nom>Aire de glissade, Ignace-Bourget</nom>
+        <arrondissement>
+            <nom_arr>Le Sud-Ouest</nom_arr>
+            <cle>sou</cle>
+            <date_maj>2022-03-11 03:14:27</date_maj>
+        </arrondissement>
+        <ouvert>1</ouvert>
+        <deblaye>0</deblaye>
+        <condition>N/A</condition>
+    </glissade>
+    <glissade>
+        <nom>Aire de glissade, Joseph-Paré</nom>
+        <arrondissement>
+            <nom_arr>Rosemont - La Petite-Patrie</nom_arr>
+            <cle>rpp</cle>
+            <date_maj>2022-03-18 18:39:14</date_maj>
+        </arrondissement>
+        <ouvert></ouvert>
+        <deblaye></deblaye>
+        <condition>Mauvaise</condition>
+    </glissade>
+    <glissade>
+        <nom>Aire de glissade, Le Ber</nom>
+        <arrondissement>
+            <nom_arr>Le Sud-Ouest</nom_arr>
+            <cle>sou</cle>
+            <date_maj>2022-03-11 03:14:27</date_maj>
+        </arrondissement>
+        <ouvert>1</ouvert>
+        <deblaye>0</deblaye>
+        <condition>N/A</condition>
+    </glissade>
+    <glissade>
+        <nom>Aire de glissade, Mont-Royal</nom>
+        <arrondissement>
+            <nom_arr>Ville-Marie</nom_arr>
+            <cle>vma</cle>
+            <date_maj>2022-03-16 15:37:30</date_maj>
+        </arrondissement>
+        <ouvert>0</ouvert>
+        <deblaye>0</deblaye>
+        <condition>N/A</condition>
+    </glissade>
+    <glissade>
+        <nom>Glissade, Parc Arthur-Therrien</nom>
+        <arrondissement>
+            <nom_arr>Verdun</nom_arr>
+            <cle>ver</cle>
+            <date_maj>2022-03-12 10:17:18</date_maj>
+        </arrondissement>
+        <ouvert>1</ouvert>
+        <deblaye>1</deblaye>
+        <condition>Excellente</condition>
+    </glissade>
+    <glissade>
+        <nom>Glissade, Parc Beaubien</nom>
+        <arrondissement>
+            <nom_arr>Outremont</nom_arr>
+            <cle>out</cle>
+            <date_maj>2022-03-11 10:19:47</date_maj>
+        </arrondissement>
+        <ouvert>1</ouvert>
+        <deblaye></deblaye>
+        <condition>Bonne</condition>
+    </glissade>
+    <glissade>
+        <nom>Aire de glissade, Parc Confédération</nom>
+        <arrondissement>
+            <nom_arr>Côte-des-Neiges - Notre-Dame-de-Grâce</nom_arr>
+            <cle>cdn</cle>
+            <date_maj>2022-03-13 12:30:47</date_maj>
+        </arrondissement>
+        <ouvert>0</ouvert>
+        <deblaye>0</deblaye>
+        <condition>N/A</condition>
+    </glissade>
+    <glissade>
+        <nom>Aire de glissade, parc Coubertin</nom>
+        <arrondissement>
+            <nom_arr>Saint-Léonard</nom_arr>
+            <cle>sle</cle>
+            <date_maj>2022-02-24 06:43:20</date_maj>
+        </arrondissement>
+        <ouvert>1</ouvert>
+        <deblaye></deblaye>
+        <condition>Mauvaise</condition>
+    </glissade>
+    <glissade>
+        <nom>Aire de glissade, parc Delorme</nom>
+        <arrondissement>
+            <nom_arr>Saint-Léonard</nom_arr>
+            <cle>sle</cle>
+            <date_maj>2022-02-24 06:43:20</date_maj>
+        </arrondissement>
+        <ouvert>1</ouvert>
+        <deblaye></deblaye>
+        <condition>Mauvaise</condition>
+    </glissade>
+    <glissade>
+        <nom>Aire de glissade , Parc des rapides</nom>
+        <arrondissement>
+            <nom_arr>LaSalle</nom_arr>
+            <cle>lsl</cle>
+            <date_maj>2022-03-15 13:44:59</date_maj>
+        </arrondissement>
+        <ouvert></ouvert>
+        <deblaye>0</deblaye>
+        <condition>N/A</condition>
+    </glissade>
+    <glissade>
+        <nom>Glissade, Parc du Bois-Franc</nom>
+        <arrondissement>
+            <nom_arr>Saint-Laurent</nom_arr>
+            <cle>sla</cle>
+            <date_maj>2022-03-05 05:55:27</date_maj>
+        </arrondissement>
+        <ouvert>0</ouvert>
+        <deblaye>0</deblaye>
+        <condition>N/A</condition>
+    </glissade>
+    <glissade>
+        <nom>Aire de glissade, parc Ferland</nom>
+        <arrondissement>
+            <nom_arr>Saint-Léonard</nom_arr>
+            <cle>sle</cle>
+            <date_maj>2022-02-24 06:43:20</date_maj>
+        </arrondissement>
+        <ouvert>1</ouvert>
+        <deblaye></deblaye>
+        <condition>Mauvaise</condition>
+    </glissade>
+    <glissade>
+        <nom>Aire de glissade, Parc Grovehill</nom>
+        <arrondissement>
+            <nom_arr>Lachine</nom_arr>
+            <cle>lch</cle>
+            <date_maj>2022-03-07 10:12:31</date_maj>
+        </arrondissement>
+        <ouvert>0</ouvert>
+        <deblaye>0</deblaye>
+        <condition>N/A</condition>
+    </glissade>
+    <glissade>
+        <nom>Glissade, Parc Hartenstein</nom>
+        <arrondissement>
+            <nom_arr>Saint-Laurent</nom_arr>
+            <cle>sla</cle>
+            <date_maj>2022-03-05 05:55:27</date_maj>
+        </arrondissement>
+        <ouvert>0</ouvert>
+        <deblaye>0</deblaye>
+        <condition>N/A</condition>
+    </glissade>
+    <glissade>
+        <nom>Aire de glissade, Parc Hayward</nom>
+        <arrondissement>
+            <nom_arr>LaSalle</nom_arr>
+            <cle>lsl</cle>
+            <date_maj>2022-03-15 13:44:59</date_maj>
+        </arrondissement>
+        <ouvert></ouvert>
+        <deblaye>0</deblaye>
+        <condition>N/A</condition>
+    </glissade>
+    <glissade>
+        <nom>AIre de glissade, Parc Henri-Bourassa</nom>
+        <arrondissement>
+            <nom_arr>Montréal-Nord</nom_arr>
+            <cle>mno</cle>
+            <date_maj>2022-03-16 05:30:58</date_maj>
+        </arrondissement>
+        <ouvert></ouvert>
+        <deblaye>0</deblaye>
+        <condition>N/A</condition>
+    </glissade>
+    <glissade>
+        <nom>Aire de glissade, Parc Jarry</nom>
+        <arrondissement>
+            <nom_arr>Villeray-Saint-Michel - Parc-Extension</nom_arr>
+            <cle>vsp</cle>
+            <date_maj>2022-03-13 07:44:55</date_maj>
+        </arrondissement>
+        <ouvert>0</ouvert>
+        <deblaye>0</deblaye>
+        <condition>N/A</condition>
+    </glissade>
+    <glissade>
+        <nom>Aire de glissade, Parc Lafond</nom>
+        <arrondissement>
+            <nom_arr>Rosemont - La Petite-Patrie</nom_arr>
+            <cle>rpp</cle>
+            <date_maj>2022-03-18 18:39:14</date_maj>
+        </arrondissement>
+        <ouvert></ouvert>
+        <deblaye></deblaye>
+        <condition>Mauvaise</condition>
+    </glissade>
+    <glissade>
+        <nom>Aire de glissage, Parc Père-Marquette</nom>
+        <arrondissement>
+            <nom_arr>Rosemont - La Petite-Patrie</nom_arr>
+            <cle>rpp</cle>
+            <date_maj>2022-03-18 18:39:14</date_maj>
+        </arrondissement>
+        <ouvert></ouvert>
+        <deblaye></deblaye>
+        <condition>Mauvaise</condition>
+    </glissade>
+    <glissade>
+        <nom>Glissade, Parc Philippe-Laheurte</nom>
+        <arrondissement>
+            <nom_arr>Saint-Laurent</nom_arr>
+            <cle>sla</cle>
+            <date_maj>2022-03-05 05:55:27</date_maj>
+        </arrondissement>
+        <ouvert>0</ouvert>
+        <deblaye>0</deblaye>
+        <condition>N/A</condition>
+    </glissade>
+    <glissade>
+        <nom>Aire de glissade, Parc Pilon</nom>
+        <arrondissement>
+            <nom_arr>Montréal-Nord</nom_arr>
+            <cle>mno</cle>
+            <date_maj>2022-03-16 05:30:58</date_maj>
+        </arrondissement>
+        <ouvert></ouvert>
+        <deblaye>0</deblaye>
+        <condition>N/A</condition>
+    </glissade>
+    <glissade>
+        <nom>Aire de glissade, Parc Saïdye-Bronfman</nom>
+        <arrondissement>
+            <nom_arr>Côte-des-Neiges - Notre-Dame-de-Grâce</nom_arr>
+            <cle>cdn</cle>
+            <date_maj>2022-03-13 12:30:47</date_maj>
+        </arrondissement>
+        <ouvert>0</ouvert>
+        <deblaye>0</deblaye>
+        <condition>N/A</condition>
+    </glissade>
+    <glissade>
+        <nom>Glissade, Parc Saint-Laurent</nom>
+        <arrondissement>
+            <nom_arr>Saint-Laurent</nom_arr>
+            <cle>sla</cle>
+            <date_maj>2022-03-05 05:55:27</date_maj>
+        </arrondissement>
+        <ouvert>0</ouvert>
+        <deblaye>0</deblaye>
+        <condition>N/A</condition>
+    </glissade>
+    <glissade>
+        <nom>Aire de glissade, Parc Sauvé</nom>
+        <arrondissement>
+            <nom_arr>Montréal-Nord</nom_arr>
+            <cle>mno</cle>
+            <date_maj>2022-03-16 05:30:58</date_maj>
+        </arrondissement>
+        <ouvert></ouvert>
+        <deblaye>0</deblaye>
+        <condition>N/A</condition>
+    </glissade>
+    <glissade>
+        <nom>Glissade, Parc West-Vancouver</nom>
+        <arrondissement>
+            <nom_arr>Verdun</nom_arr>
+            <cle>ver</cle>
+            <date_maj>2022-03-12 10:17:18</date_maj>
+        </arrondissement>
+        <ouvert>1</ouvert>
+        <deblaye>1</deblaye>
+        <condition>Excellente</condition>
+    </glissade>
+    <glissade>
+        <nom>Aire de glissade,Saint-Jean-Baptiste</nom>
+        <arrondissement>
+            <nom_arr>Rivière-des-Prairies - Pointe-aux-Trembles</nom_arr>
+            <cle>rdp</cle>
+            <date_maj>2022-03-04 03:47:41</date_maj>
+        </arrondissement>
+        <ouvert></ouvert>
+        <deblaye></deblaye>
+        <condition>Mauvaise</condition>
+    </glissade>
+    <glissade>
+        <nom>Aire de glissade,Saint-Joseph</nom>
+        <arrondissement>
+            <nom_arr>Rivière-des-Prairies - Pointe-aux-Trembles</nom_arr>
+            <cle>rdp</cle>
+            <date_maj>2022-03-04 03:47:41</date_maj>
+        </arrondissement>
+        <ouvert></ouvert>
+        <deblaye></deblaye>
+        <condition>Mauvaise</condition>
+    </glissade>
+    <glissade>
+        <nom>Aire de glissade, Terrain de la mairie</nom>
+        <arrondissement>
+            <nom_arr>LaSalle</nom_arr>
+            <cle>lsl</cle>
+            <date_maj>2022-03-15 13:44:59</date_maj>
+        </arrondissement>
+        <ouvert></ouvert>
+        <deblaye>0</deblaye>
+        <condition>N/A</condition>
+    </glissade>
+</glissades>

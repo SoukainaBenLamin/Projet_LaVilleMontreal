@@ -1,0 +1,137 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="text">
+        <h5>Veuillez entrer le nom d'arrondissment désiré !</h5>
+        <h5> cliquez sur <b> Chercher </b> pour lister toutes les installations existantes !</h5>
+    </div>
+    <div class="formulaire">
+        <form action="/" method="GET" id="search">
+             <div class="form-group">
+                  <label for="champ-arrondis"><b>Arrondissment</b></label>
+                  <input id="champ-arrondis" type="text" name="arrondissement" class="form-control" placeholder="nom d'arrondissment" required maxlength="500" >
+            </div>
+            <button type="submit" class="btn btn-outline-light colorstyle" id="btn">Chercher</button>
+        </form>
+        <br>
+    </div>
+    <div class="alert alert-danger" id="DvError" role="alert" style="display:none;">
+        <b>Erreur, ce nom d'arrondissement n'existe pas !</b>
+    </div>
+    <div id="table">
+        <table id="test" class="table table-light table-hover">
+            <tr>
+                <td>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Les glissades</th>
+                            </tr>
+                        </thead>
+                        <tbody id="glissade_tab">
+                        </tbody>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Les piscines</th>
+                            </tr>
+                        </thead>
+                        <tbody id="piscine_tab">
+                        </tbody>
+                    </table>
+                </td>
+                <td>
+                    <table >
+                        <thead>
+                            <tr>
+                                <th>Les patinoires</th>
+                            </tr>
+                        </thead>
+                        <tbody id="patinoire_tab">
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="text">
+        <h5>Veuillez cocher la case radio du type d'installations pour voir les informations !</h5>
+    </div>
+    <div class="radioSelect">
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="champs_radio"  id="radio_glis" >
+            <label class="form-check-label" for="radio_glis"> Glissades </label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="champs_radio" id="radio_pis" >
+            <label class="form-check-label" for="radio_pis"> Piscines </label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="champs_radio"  id="radio_pat" >
+            <label class="form-check-label" for="radio_pat">Patinoires</label>
+        </div>
+    </div>
+    <br>
+    <div class="select">
+        <select class="form-select form-select-lg mb-3" id="champ-installation" name="installation" disabled>
+            <option value=""> Aucun </option>
+        </select>
+    </div>
+    <div class="card bg-light " id="dvGlis">
+        <div class="row g-0">
+            <div class="col-md-4" >
+              <img src="./static/images/glissade.png" class="pic" alt="un glissade">
+            </div>
+            <div class="col-md-4 offset-md-4" >
+                <div class="card-body">
+                    <p class="card-title"><b>Nom : <span id="name_g" ></span></b></p>
+                    <p><b>Arrondissement : <span id="arrond_g"></span></b></p>
+                    <p><b>Clé Arrondissement : <span id="cle"></span></b></p>
+                    <p><b>Condition : <span id="condition"></span></b></p>
+                    <p><b>Date : <span id = "date"></span></b></p>
+                    <p><b>Deblaye : <span id="deblaye"></span></b></p>
+                    <p><b>Ouvert : <span id="ouvert"></span></b></p>
+              </div>
+            </div>
+        </div>
+    </div>
+    <div class="card bg-light" id="dvPis">
+        <div class="row g-0">
+            <div class="col-md-4">
+              <img src="./static/images/piscine.png" class="pic" alt="une piscine">
+            </div>
+            <div class="col-md-4 offset-md-4" >
+                <div class="card-body">
+                    <p><b>Nom : <span id="name_pis" ></span></b></p>
+                    <p><b>Arrondissement : <span id="arrond_pis"></span></b></p>
+                    <p><b>Adresse: <span id="adresse"></span></b></p>
+                    <p><b>Id : <span id="id"></span></b></p>
+                    <p><b>Type: <span id = "type"></span></b></p>
+                    <p><b>Propriété : <span id="prop"></span></b></p>
+              </div>
+            </div>
+        </div>
+    </div>
+    <div class="card bg-light" id="dvPat">
+        <div class="row g-0">
+            <div class="col-md-4">
+              <img src="./static/images/patinoire.png" class="pic" alt="un patinoire">
+            </div>
+            <div class="col-md-4 offset-md-4" >
+                <div class="card-body">
+                    <p><b>Nom : <span id="name_pat" ></span></b></p>
+                    <p><b>Arrondissement : <span id="arrond_pat"></span></b></p>
+                    <p><b>Date : <span id = "date_p"></span></b></p>
+                    <p><b>Deblaye : <span id="deblaye_p"></span></b></p>
+                    <p><b>Ouvert : <span id="ouvert_p"></span></b></p>
+                    <p><b>Arrose : <span id="arrose"></span></b></p>
+                    <p><b>resurface: <span id="resurface"></span></b></p>
+              </div>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock content %}
