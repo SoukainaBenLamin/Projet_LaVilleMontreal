@@ -2,23 +2,35 @@
 ### Nom et prénom : BEN LAMIN SOUKAINA
 ### Code permanent : BENS10549601
 
+#### À propos
+
+  ```
+  Cette application a été développée en utilisant les langages et technologies suivantes : 
+    - Python3 
+    - Flask
+    - API REST
+    - SQlite
+    - JavaScript
+  ```
+
+
 #### Démarrage de l'application :
-```
-- Pour démarrer l'application, il suffit de taper la commande : make
-```
-```
-- Si, vous préférez de ne pas utiliser La commande make, vous pouvez lancer 
-l'application, en tapant la commande : python3 run.py 
-- Remarque:
-    Si vous utiliser l'environnemnet virtuel de projet, vous pouvez modifier le fichier run.py et tapez dans la condition if:
-        app.run(host='0.0.0.0')
+1. On commence par installer flask :
 
+   ```
+    $ pip install flask
+   ```
+2. Installation des dépendances :
 
-```
+   ```
+    $ sudo pip install -r requirements.txt
+   ```
+3. Lancer l'application :
+    ```
+    $ make OU $ python3 run.py
+    ```
+
 #### Quelques consignes : 
-```
-- Le répertoire qui porte le nom de db contient déja une base de 
-  donnée remplie et qui porte le nom de db.db. 
-  Il est important de ne pas changer le nom de cette base de données car elle est utilisé
-  dans les autres fichiers de code. 
-```
+  ```
+    Le répertoire qui porte le nom de db contient déja une base de donnée remplie et qui porte le nom de db.db. Il est important de ne pas changer le nom de cette base de données car elle est utilisé dans les autres fichiers de code. 
+  ```
