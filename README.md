@@ -33,4 +33,6 @@
 #### Quelques consignes : 
   ```
     Le répertoire qui porte le nom de db contient déja une base de donnée remplie et qui porte le nom de db.db. Il est important de ne pas changer le nom de cette base de données car elle est utilisé dans les autres fichiers de code. 
+    L'application sera lancée sur le port 5000.
+        http://localhost:5000/
   ```
