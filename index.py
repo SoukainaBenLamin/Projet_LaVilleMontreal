@@ -8,6 +8,8 @@ from dicttoxml import dicttoxml
 from json import loads
 from tweet import *
 from emails import *
+import collections
+collections.Iterable = collections.abc.Iterable
 
 """
     Cette fonction permet de créer une base
